@@ -1,0 +1,29 @@
+@urlApi = http://localhost:3000/manteniments
+
+### Inserta un color de cabell
+POST {{urlApi}}/cabellcolor
+Content-Type: application/json
+
+{
+    "ColorCabell": "GRoc"
+}
+
+
+### Obte tots els colors de cabell
+GET {{urlApi}}/cabellcolor
+
+
+### Obte un color de cabell segons el seu id
+GET {{urlApi}}/cabellcolor/5f9ea299b42376f8ac8908e9
+
+### Elimna un color de cabell
+DELETE {{urlApi}}/cabellcolor/5fb43ec4ff30094573a4844e
+
+
+### Actualitza un color de cabell
+PUT {{urlApi}}/cabellcolor/5fb43ec4ff30094573a4844e
+Content-Type: application/json
+
+{
+    "rerr": "fdfdff"
+}

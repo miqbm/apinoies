@@ -1,0 +1,29 @@
+@urlApi = http://localhost:3000/manteniments
+
+### Inserta una situacio
+POST {{urlApi}}/situacio
+Content-Type: application/json
+
+{
+    "Situacio": "Al bosc"
+}
+
+
+### Obte totes les situacions
+GET {{urlApi}}/situacio
+
+
+### Obte una situacio segons el seu id
+GET {{urlApi}}/situacio/5f9ea29ab42376f8ac8908ff
+
+### Elimna una situacio
+DELETE {{urlApi}}/situacio/5fb4480070472e51e9eafad2
+
+
+### Actualitza una situacio
+PUT {{urlApi}}/situacio/5fb4480070472e51e9eafad2
+Content-Type: application/json
+
+{
+    "Situacio": "Al riu"
+}

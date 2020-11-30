@@ -1,0 +1,29 @@
+@urlApi = http://localhost:3000/manteniments
+
+### Inserta un tipus de roba
+POST {{urlApi}}/tipusroba
+Content-Type: application/json
+
+{
+    "TipusRoba": "Roba sexy"
+}
+
+
+### Obte tots els tipus de roba
+GET {{urlApi}}/tipusroba
+
+
+### Obte un tipus de roba segons el seu id
+GET {{urlApi}}/tipusroba/5f9ea29ab42376f8ac89090a
+
+### Elimna un tipus de roba
+DELETE {{urlApi}}/tipusroba/5fb17e3e14cf331019dad711
+
+
+### Actualitza un tipus de roba
+PUT {{urlApi}}/tipusroba/5fb17e3e14cf331019dad711
+Content-Type: application/json
+
+{
+    "TipusRoba": "Roba molt sexy"
+}

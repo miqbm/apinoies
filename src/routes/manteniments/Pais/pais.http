@@ -1,0 +1,29 @@
+@urlApi = http://localhost:3000/manteniments
+
+### Inserta un pais
+POST {{urlApi}}/pais
+Content-Type: application/json
+
+{
+    "Pais": "Catalunya"
+}
+
+
+### Obte tots els paisos
+GET {{urlApi}}/pais
+
+
+### Obte un pais segons el seu id
+GET {{urlApi}}/pais/5fb4435d9318c14c24f1ad81
+
+### Elimna un pais
+DELETE {{urlApi}}/pais/5fb4435d9318c14c24f1ad81
+
+
+### Actualitza un pais
+PUT {{urlApi}}/pais/5fb4435d9318c14c24f1ad81
+Content-Type: application/json
+
+{
+    "Pais": "CatalunaFrancsesa"
+}

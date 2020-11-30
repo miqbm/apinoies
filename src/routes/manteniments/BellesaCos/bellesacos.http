@@ -1,0 +1,29 @@
+@urlApi = http://localhost:3000/manteniments
+
+### GET llista de tipus de bellesa de cara
+GET {{urlApi}}/Cos
+
+
+### GET Obte un bellesa de cara a partir del seu Id
+GET {{urlApi}}/Cos/5f9ea299b42376f8ac8908e4
+
+### POST afegeix un belles de cara
+POST {{urlApi}}/Cos
+Content-Type: application/json
+
+{
+    "Cos": "mmmmmm",
+    "Puntuacio": 2
+}
+
+### DELETE Elimina un tipus de bellesa de cara
+DELETE {{urlApi}}/Cos/5fb410dedba9eb1131e4405f
+
+### UPDATE Actualitza un tipus de bellesa de cara
+PUT {{urlApi}}/Cos/5fb410dedba9eb1131e4405f
+Content-Type: application/json
+
+{
+    "Puntuacio": 8.5,
+    "Cos": "Molt guapa"
+}

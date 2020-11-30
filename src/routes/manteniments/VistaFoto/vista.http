@@ -1,0 +1,29 @@
+@urlApi = http://localhost:3000/manteniments
+
+### Inserta una vista
+POST {{urlApi}}/vista
+Content-Type: application/json
+
+{
+    "Vista": "de prop"
+}
+
+
+### Obte totes les vistes
+GET {{urlApi}}/vista
+
+
+### Obte una vista segons el seu id
+GET {{urlApi}}/vista/5f9ea29ab42376f8ac890901
+
+### Elimna una vista
+DELETE {{urlApi}}/vista/5fb449f0b8d58b547e2846b9
+
+
+### Actualitza una vista
+PUT {{urlApi}}/vista/5fb449f0b8d58b547e2846b9
+Content-Type: application/json
+
+{
+    "Vista": "de lluny"
+}

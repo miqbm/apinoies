@@ -1,0 +1,27 @@
+@urlApi = http://localhost:3000/manteniments
+
+### Obte totes les robes
+GET {{urlApi}}/roba
+
+### Obtencio de roba segons el seu id
+GET {{urlApi}}/roba/5f9ea29bb42376f8ac890918
+
+### Elimina una roba segons el seu id
+DELETE {{urlApi}}/roba/5fb2c203c79afe13fe8494f4
+
+### Inserta una robaF
+POST {{urlApi}}/roba
+Content-Type: application/json
+
+{
+    "Roba": "Goita!!!!",
+    "TipusRoba": "5f9ea29ab42376f8ac89090a"
+}
+
+### Actualitza una roba
+PUT {{urlApi}}/roba/5fb2c28745bddd147c1bd790
+Content-Type: application/json
+
+{
+    "TipusRoba": "5f9ea29ab42376f8ac890915"
+}

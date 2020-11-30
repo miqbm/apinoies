@@ -1,0 +1,29 @@
+@urlApi = http://localhost:3000/manteniments
+
+### Inserta una accio
+POST {{urlApi}}/accio
+Content-Type: application/json
+
+{
+    "Accio": "faig coses imperdonables"
+}
+
+
+### Obte totes les vistes
+GET {{urlApi}}/accio
+
+
+### Obte una accio segons el seu id
+GET {{urlApi}}/accio/5f9ea29bb42376f8ac8909e0
+
+### Elimna una accio
+DELETE {{urlApi}}/accio/5fb44f412265605aeea57bb5
+
+
+### Actualitza una accio
+PUT {{urlApi}}/accio/5fb44f412265605aeea57bb5
+Content-Type: application/json
+
+{
+    "Accio": "faig cosess imperdonables i mes!"
+}

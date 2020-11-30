@@ -1,0 +1,29 @@
+@urlApi = http://localhost:3000/manteniments
+
+### Inserta una postura
+POST {{urlApi}}/postura
+Content-Type: application/json
+
+{
+    "Postura": "Mirant amunt"
+}
+
+
+### Obte totes les postures
+GET {{urlApi}}/postura
+
+
+### Obte una postura segons el seu id
+GET {{urlApi}}/postura/5f9ea29ab42376f8ac890904
+
+### Elimna una postura
+DELETE {{urlApi}}/postura/5fb4460fcdc2c14fbb48deb8
+
+
+### Actualitza una postura
+PUT {{urlApi}}/postura/5fb4460fcdc2c14fbb48deb8
+Content-Type: application/json
+
+{
+    "Postura": "mirant avall"
+}

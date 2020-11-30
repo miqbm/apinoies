@@ -1,0 +1,28 @@
+@urlApi = http://localhost:3000/manteniments
+
+### GET llista de tipus de tetes
+GET {{urlApi}}/tetes
+
+
+### GET Obte un tetes a partir del seu Id
+GET {{urlApi}}/tetes/5f9ea29ab42376f8ac8908f9
+
+### POST afegeix un tetes
+POST {{urlApi}}/tetes
+Content-Type: application/json
+
+{
+    "TamanyTetes": "mmmmmm"
+}
+
+### DELETE Elimina un tipus de tetes
+DELETE {{urlApi}}/tetes/5fb3020a8d30c35f9a4237a2
+
+### UPDATE Actualitza un tipus de tetes
+PUT {{urlApi}}/tetes/5fb302208d30c35f9a4237a3
+Content-Type: application/json
+
+{
+    "Puntuacio": 10,
+    "TamanyTetes": "de goma"
+}

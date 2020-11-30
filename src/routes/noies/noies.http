@@ -1,0 +1,31 @@
+@urlApi = http://localhost:3000
+
+### Obte totes les noies
+GET {{urlApi}}/noies
+Content-Type: application/json
+
+
+### Obte una noia segons el seu Id
+GET {{urlApi}}/noies/5f9ea29cb42376f8ac890a20
+Content-Type: application/json
+
+### Inserta una noia
+POST {{urlApi}}/noies
+Content-Type: application/json
+
+{
+    "Nom" : "Micaela"
+}
+
+### Eliminar noia by id
+DELETE {{urlApi}}/noies/5f9ea29cb42376f8ac890a24
+
+
+### Actualitzar una noia
+PUT {{urlApi}}/noies/5f9ea29cb4237648ac890a20
+Content-Type: application/json
+
+{
+    "Nom": "Miquela"
+}
+

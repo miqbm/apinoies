@@ -1,0 +1,28 @@
+@urlApi = http://localhost:3000/manteniments
+
+### GET llista de tipus de conys
+GET {{urlApi}}/cony
+
+
+### GET Obte un cony a partir del seu Id
+GET {{urlApi}}/cony/5f9ea29ab42376f8ac8908f3
+
+### POST afegeix un cony
+POST {{urlApi}}/cony
+Content-Type: application/json
+
+{
+    "TipusCony": "mmmmmm"
+}
+
+### DELETE Elimina un tipus de cony
+DELETE {{urlApi}}/cony/5fb2fe6fb8f8035ab9420d94
+
+### UPDATE Actualitza un tipus de cony
+PUT {{urlApi}}/cony/5fb2ff5ff9ec9f5bc4021d11
+Content-Type: application/json
+
+{
+    "Puntuacio": 10,
+    "TipusCony": "dsdsdsd"
+}

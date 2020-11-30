@@ -1,0 +1,31 @@
+@urlApi = http://localhost:3000/manteniments
+
+### Inserta un titol
+POST {{urlApi}}/titol
+Content-Type: application/json
+
+{
+    "Titol": "Noies excitants",
+    "TeSetmana": true
+}
+
+
+### Obte tot els titols
+GET {{urlApi}}/titol
+
+
+### Obte un titol segons el seu id
+GET {{urlApi}}/titol/5f9ea29bb42376f8ac8909d8
+
+### Elimna una vista
+DELETE {{urlApi}}/titol/5fb44da28a87c458d9db2169
+
+
+### Actualitza una vista
+PUT {{urlApi}}/titol/5fb44da28a87c458d9db2169
+Content-Type: application/json
+
+{
+    "Titol": "Noies Excittants 2",
+    "TeMes": true
+}

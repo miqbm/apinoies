@@ -1,0 +1,29 @@
+@urlApi = http://localhost:3000/manteniments
+
+### Inserta un tipuw de cabell
+POST {{urlApi}}/cabelltipus
+Content-Type: application/json
+
+{
+    "TipusCabell": "GRoc"
+}
+
+
+### Obte tots els tipus de cabell
+GET {{urlApi}}/cabelltipus
+
+
+### Obte un tipus de cabell segons el seu id
+GET {{urlApi}}/cabelltipus/5f9ea29ab42376f8ac8908ed
+
+### Elimna un tipus de cabell
+DELETE {{urlApi}}/cabelltipus/5fb44164a989dd49a80c533c
+
+
+### Actualitza un tipus de cabell
+PUT {{urlApi}}/cabelltipus/5fb44164a989dd49a80c533c
+Content-Type: application/json
+
+{
+    "TipusCabell": "vermell"
+}
